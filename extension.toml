@@ -4,5 +4,5 @@ version = "0.1.0"
 schema_version = 1
 authors = ["Islom Matkarimov <islommatkarimovdev@gmail.com>"]
 description = "TS snippets for Zed IDE. A collection of TS snippets to improve your development speed."
-repository = ""
+repository = "https://github.com/onehanduz/ts-snippets-for-zed.git"
 snippets = "./snippets/typescript.json"
