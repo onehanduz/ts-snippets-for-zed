@@ -1,0 +1,62 @@
+{
+  "log": {
+    "prefix": "log",
+    "body": ["console.log($1);"],
+    "description": "Console log"
+  },
+  "import": {
+    "prefix": "import",
+    "body": "import ${2:module} from '${1:module}';$0",
+    "description": "Imports entire module statement in ES6 syntax"
+  },
+  "importAs": {
+    "prefix": "imas",
+    "body": "import { ${2:originalName} as ${3:alias} } from '${1:module}';$0",
+    "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
+  },
+  "require": {
+    "prefix": "req",
+    "body": "const ${1:package} = require('${1:package}');",
+    "description": "Require a package"
+  },
+  "moduleExports": {
+    "prefix": "module",
+    "body": "module.exports = {\n\t$0\n};\n",
+    "description": "Module exports from Common JS, node syntax at ES6"
+  },
+  "exportNamedVariable": {
+    "prefix": "export",
+    "body": "export = {${1:exportVariable}};\n",
+    "description": "Export named"
+  },
+  "namedFunction": {
+    "prefix": "fun",
+    "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
+    "description": "Creates a named function"
+  },
+  "setInterval": {
+    "prefix": "setinterval",
+    "body": "setInterval(() => {\n\t${2}\n}, ${0:intervalInms});",
+    "description": "SetInterval"
+  },
+  "setTimeOut": {
+    "prefix": "settimeout",
+    "body": "setTimeout(() => {\n\t${2}\n}, ${1:delayInms});",
+    "description": "SetTimeOut"
+  },
+  "promise": {
+    "prefix": "promise",
+    "body": "const ${1} = new Promise((resolve, reject) => {\n\t${2}\n});",
+    "description": "Creates a new Promise"
+  },
+  "for": {
+    "prefix": "for",
+    "body": "for (let $1i; $1i < array.length; $1i++){\n\t${2}\n}",
+    "description": "For loop"
+  },
+  "funtion": {
+    "prefix": "funtion",
+    "body": "",
+    "description": "Funtion"
+  }
+}
